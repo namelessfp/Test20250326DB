@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Byron20250326DB.AppWebMVC", "Byron20250326DB.AppWebMVC\Byron20250326DB.AppWebMVC.csproj", "{41F61C96-4C36-4AB5-B28B-EFFEDCF3E7CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41F61C96-4C36-4AB5-B28B-EFFEDCF3E7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F61C96-4C36-4AB5-B28B-EFFEDCF3E7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F61C96-4C36-4AB5-B28B-EFFEDCF3E7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F61C96-4C36-4AB5-B28B-EFFEDCF3E7CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78B3AADC-0856-45E6-9946-4EBB5DA768C0}
+	EndGlobalSection
+EndGlobal
