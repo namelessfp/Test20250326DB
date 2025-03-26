@@ -1,33 +1,49 @@
 ﻿@model Byron20250326DB.AppWebMVC.Models.Warehouse
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Crear";
 }
 
-<h1>Create</h1>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">Crear Nuevo Almacén</h2>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-<h4>Warehouse</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="WarehouseName" class="control-label"></label>
-                <input asp-for="WarehouseName" class="form-control" />
-                <span asp-validation-for="WarehouseName" class="text-danger"></span>
+                        <div class="form-floating mb-3">
+                            <input id="WarehouseName"
+                                   asp-for="WarehouseName"
+                                   class="form-control"
+                                   placeholder="Nombre del almacén" />
+                            <label for="WarehouseName" class="text-muted">Nombre del Almacén</label>
+                            <span asp-validation-for="WarehouseName" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <input type="submit"
+                                   value="Crear"
+                                   class="btn btn-primary btn-lg" />
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer bg-light">
+                    <a asp-action="Index"
+                       class="btn btn-outline-secondary w-100">
+                        Volver a la lista
+                    </a>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
